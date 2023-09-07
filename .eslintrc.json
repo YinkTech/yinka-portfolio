@@ -1,5 +1,5 @@
 {
-  "root" : true,
+  "root": true,
   "extends": "next",
   "rules": {
     "no-unused-vars": [
@@ -8,6 +8,7 @@
         "argsIgnorePattern": "^_",
         "varsIgnorePattern": "^_"
       }
-    ]
+    ],
+    "react/display-name": 0
   }
 }
