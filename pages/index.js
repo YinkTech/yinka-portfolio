@@ -9,7 +9,6 @@ import {
   Link,
   ListItem,
   List,
-  SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Section from "../components/section";
@@ -23,7 +22,6 @@ import {
   IoLogoLinkedin,
   IoLogoTwitter,
 } from "react-icons/io5";
-import { GridItem } from "../components/grid-item";
 
 const Page = () => {
   return (

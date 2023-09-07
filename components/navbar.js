@@ -37,6 +37,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     </Link>
   );
 };
+
 const MenuLink = forwardRef((props, ref) => (
   <Link ref={ref} as={NextLink} {...props} />
 ));
@@ -103,7 +104,6 @@ const NavBar = (props) => {
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
-                aria-aria-label="Options"
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">

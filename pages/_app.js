@@ -9,7 +9,7 @@ import {
   useSpring,
 } from "framer-motion";
 import "./cursor.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Website = ({ Component, pageProps, router }) => {
   const cursorX = useMotionValue(-100);
@@ -21,7 +21,7 @@ const Website = ({ Component, pageProps, router }) => {
   if (typeof window !== 'undefined') {
     window.history.scrollRestoration = 'manual'
   }
-  
+
   useEffect(() => {
     const moveCursor = (e) => {
       cursorX.set(e.clientX - 16);
