@@ -16,22 +16,30 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
+import { forwardRef } from "react";
+import { IoLogoGithub } from "react-icons/io5";
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path == href;
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
   return (
     <Link
       as={NextLink}
       href={href}
+      scroll={false}
       p={2}
       bg={active ? "glassTeal" : undefined}
       color={active ? "#202023" : inactiveColor}
+      target={target}
+      {...props}
     >
       {children}
     </Link>
   );
 };
+const MenuLink = forwardRef((props, ref) => (
+  <Link ref={ref} as={NextLink} {...props} />
+));
 
 const NavBar = (props) => {
   const { path } = props;
@@ -41,14 +49,14 @@ const NavBar = (props) => {
       as="nav"
       w="100%"
       bg={useColorModeValue("#ffffff40", "#20202380")}
-      style={{ backdropFilter: "blur(10px" }}
-      zIndex={1}
+      css={{ backdropFilter: "blur(10px)" }}
+      zIndex={2}
       {...props}
     >
       <Container
         display="flex"
         p={2}
-        maxW="Container.md"
+        maxW="container.md"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -73,11 +81,24 @@ const NavBar = (props) => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
+          <LinkItem href="https://github.com/YinkTech">Uses</LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://github.com/YinkTech/yinka-portfolio"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            Source
+          </LinkItem>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
-            <Menu>
+            <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
@@ -85,16 +106,22 @@ const NavBar = (props) => {
                 aria-aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={Link} href="/">
+                <MenuItem as={MenuLink} href="/">
                   About
                 </MenuItem>
-                <MenuItem as={Link} href="/works">
+                <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
-                <MenuItem as={Link} href="/posts">
+                <MenuItem as={MenuLink} href="/posts">
                   Posts
                 </MenuItem>
-                <MenuItem as={Link} href="https://Yinka.com">
+                <MenuItem as={MenuLink} href="https://Yinka.com">
+                  View Source
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/craftzdog/craftzdog-homepage"
+                >
                   View Source
                 </MenuItem>
               </MenuList>

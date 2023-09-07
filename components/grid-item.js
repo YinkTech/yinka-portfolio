@@ -4,7 +4,7 @@ import Image from "next/image";
 import NextLink from "next/link";
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
-  <Box w="100" align="center">
+  <Box w="100%" textAlign="center">
     <LinkBox cursor="pointer">
       <Image
         src={thumbnail}
@@ -22,30 +22,35 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 );
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" align="center">
-    <LinkBox as={NextLink} cursor="pointer" href={`/works/${id}`}>
+  <Box w="100%" textAlign="center">
+    <LinkBox
+      as={NextLink}
+      scroll={false}
+      cursor="pointer"
+      href={`/works/${id}`}
+    >
       <Image
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
         placeholder="blur"
       />
-      <LinkOverlay href={`/works/${id}`}>
+      <LinkOverlay as="div" href={`/works/${id}`}>
         <Text mt={2} fontSize={20}>
           {title}
         </Text>
-        <Text fontSize={14}>{children}</Text>
       </LinkOverlay>
+      <Text fontSize={14}>{children}</Text>
     </LinkBox>
   </Box>
 );
 
-export const GridItemStyle = ({}) => (
+export const GridItemStyle = () => (
   <Global
     styles={`
-  .grid-item-thumbnail {
-    border-radius: 12px;
-  }
-  `}
+      .grid-item-thumbnail {
+        border-radius: 12px;
+      }
+    `}
   />
 );

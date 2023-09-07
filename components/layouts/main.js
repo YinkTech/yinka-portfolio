@@ -1,6 +1,8 @@
 import Head from "next/head";
 import NavBar from "./../navbar.js";
 import { Box, Container } from "@chakra-ui/react";
+import YinkTech from "../yink-tech.js";
+import NoSsr from "../no-ssr.js";
 
 const Layout = ({ children, router }) => {
   return (
@@ -10,7 +12,10 @@ const Layout = ({ children, router }) => {
         <title> Ayeni Olayinka - Homepage </title>
       </Head>
       <NavBar path={router.asPath} />
-      <Container maxW="Container.md" pt={14}>
+      <Container maxW="container.md" pt={14}>
+        <NoSsr>
+          <YinkTech />
+        </NoSsr>
         {children}
       </Container>
     </Box>

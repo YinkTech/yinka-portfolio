@@ -4,14 +4,26 @@ import {
   Button,
   Container,
   Heading,
+  Icon,
   Image,
   Link,
+  ListItem,
+  List,
+  SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "../components/bio";
+import {
+  IoLogoDiscord,
+  IoLogoGithub,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoLogoTwitter,
+} from "react-icons/io5";
+import { GridItem } from "../components/grid-item";
 
 const Page = () => {
   return (
@@ -23,7 +35,8 @@ const Page = () => {
         mb={6}
         align="center"
       >
-        Hello, I&apos;m a full-stack developer based in Nigeria!
+        Hello, I&apos;m a full-stack developer based in Nigeria!{" "}
+        <span className="waving-hand">👋</span>
       </Box>
 
       <Box display={{ md: "flex" }}>
@@ -44,6 +57,7 @@ const Page = () => {
             borderWidth={2}
             borderStyle="solid"
             maxWidth="100px"
+            whileHover={{ scale: 1.2 }}
             display="inline-block"
             borderRadius="full"
             src="/images/pass.jpg"
@@ -60,9 +74,17 @@ const Page = () => {
           innovative, user-friendly websites, features, and products. My
           portfolio showcases a selection of my work and demonstrates my
           technical skills and experience.{" "}
-          <Link as={NextLink} href="/works/inkdrop">
-            indrop
-          </Link>
+          <Link as={NextLink} href="/works/home-heart">
+            <Button
+              color="inherit"
+              colorScheme="inherit"
+              margin="0"
+              padding="0"
+              mb={1}
+            >
+              Home
+            </Button>
+          </Link>{" "}
           .
         </Paragraph>
         <Box align="center" my={4}>
@@ -78,56 +100,9 @@ const Page = () => {
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2000</BioYear>
+          <BioYear>March 3,</BioYear>
           Born in Ibadan, Nigeria.
         </BioSection>
-        {/* <BioSection>
-          <BioYear>2023 to present</BioYear>
-          Product Development Intern Internship. <br /> • Reviewing and
-          technically assisting the company to meet the customers need. <br /> •
-          Worked with a team of three to visualize, review and analyze customers
-          feedback. <br /> • Reading and understand the Role of a Product
-          Manager.
-          <br /> • Reviewing and technically assisting the company to meet the
-          customers need.
-          <br /> • Worked with a team of three to visualize, review and analyze
-          customers feedback.
-          <br /> • Reading and understand the Role of a Product Manager. <br />{" "}
-          • Skills: Product ManagementSkills: Product Management
-        </BioSection>
-        <BioSection>
-          <BioYear>2023 to present</BioYear>
-          Technical Support Engineer & Mentorship • Internship <br />
-          Delivered valuable and punctual feedback to junior web developers
-          regarding their technical undertakings.
-          <br /> • Guaranteed the excellence of source code and performed
-          assessments of both code and UI design.
-          <br /> • Employed GitHub's review functionalities and Slack to
-          promptly address project-related queries for students.
-        </BioSection>
-        <BioSection>
-          <BioYear>2021 to 2023 </BioYear>
-          Program Remote Full Stack Web Development Program
-          <br /> Activities and societies: Mentorship of junior
-          developersActivities and societies: Mentorship of junior developers
-          <br /> • Dedicated over 1300 hours to achieving proficiency in
-          algorithms, data structures, and full-stack development, all the while
-          actively working on projects involving Ruby, Rails, JavaScript, React,
-          and Redux.
-          <br /> • Gained expertise in remote pair-programming through the
-          utilization of GitHub, industry-standard git-flow, and daily standups
-          for effective communication and collaboration with fellow developers
-          located internationally.
-          <br /> • Dedicated over 1300 hours to achieving proficiency in
-          algorithms, data structures, and full-stack development, all the while
-          actively working on projects involving Ruby, Rails, JavaScript, React,
-          and Redux. <br /> • Gained expertise in remote pair-programming through the
-          utilization of GitHub, industry-standard git-flow, and daily standups
-          for effective communication and collaboration with fellow developers
-          located internationally. <br />  Skills: GitHub · Landing Page
-          Optimization · Git · WordPress · Ruby · Product Management · Redux.js
-          · React.js · Pair Programming · JavaScript · Ruby on Rails
-        </BioSection> */}
       </Section>
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -139,10 +114,74 @@ const Page = () => {
             target="_blank"
             href="https://open.spotify.com/playlist/37i9dQZF1DWXnexX7CktaI?si=p_nIE4GRRP225Pf7nfstPw"
           >
-            Music,{" "}
-          </Link>
+            <Button color="inherit" colorScheme="inherit" m={0} p="0" mb={1}>
+              Music,
+            </Button>
+          </Link>{" "}
           Solving Problem, Games, Team Work.
         </Paragraph>
+      </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the Web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/YinkTech" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @YinkTech
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.instagram.com/yinktech.inc/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoInstagram} />}
+              >
+                @YinkTech
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.discord.com/yinktech/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoDiscord} />}
+              >
+                @YinkTech
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/yinktech/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoLinkedin} />}
+              >
+                @YinkTech
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://twitter.com/olayinkaayeni00" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoTwitter} />}
+              >
+                @Olayinka Ayeni
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
       </Section>
     </Container>
   );
