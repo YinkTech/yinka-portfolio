@@ -18,6 +18,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
 import { IoLogoGithub } from "react-icons/io5";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path == href;
@@ -82,7 +83,6 @@ const NavBar = (props) => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem href="https://github.com/YinkTech">Uses</LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/YinkTech/yinka-portfolio"
@@ -94,6 +94,18 @@ const NavBar = (props) => {
           >
             <IoLogoGithub />
             Source
+          </LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://docs.google.com/document/d/16dakAnpj3XhFMDO90oRqfDkKGbgS7BNluXS3Kzd7uoo/edit"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <ExternalLinkIcon />
+            Resume
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
@@ -115,14 +127,19 @@ const NavBar = (props) => {
                 <MenuItem as={MenuLink} href="/posts">
                   Posts
                 </MenuItem>
-                <MenuItem as={MenuLink} href="https://Yinka.com">
-                  View Source
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/YinkTech/yinka-portfolio"
+                  style={{ gap: 4 }}
+                >
+                  <IoLogoGithub /> View Source
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="hhttps://docs.google.com/document/d/16dakAnpj3XhFMDO90oRqfDkKGbgS7BNluXS3Kzd7uoo/edit"
+                  style={{ gap: 4 }}
                 >
-                  View Source
+                  <ExternalLinkIcon /> Resume
                 </MenuItem>
               </MenuList>
             </Menu>

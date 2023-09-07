@@ -10,6 +10,10 @@ import {
   ListItem,
   List,
   useColorModeValue,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -68,22 +72,15 @@ const Page = () => {
           Work
         </Heading>
         <Paragraph>
-          I&apos;m is a full-stack software developer passionate about creating
-          innovative, user-friendly websites, features, and products. My
-          portfolio showcases a selection of my work and demonstrates my
-          technical skills and experience.{" "}
-          <Link as={NextLink} href="/works/home-heart">
-            <Button
-              color="inherit"
-              colorScheme="inherit"
-              margin="0"
-              padding="0"
-              mb={1}
-            >
-              Home
-            </Button>
-          </Link>{" "}
-          .
+          I&apos;m a skilled software developer with expertise in multiple
+          websites and web application development platforms. I am an avid
+          reader with a strong work ethic. I have knowledge of technologies
+          including React, JavaScript, Ruby, and Ruby on Rails. Through my
+          experience in the field, I have developed a strong understanding of
+          the development process and the ability to deliver high-quality
+          solutions. I am excited to use my skills to help bring your ideas to
+          life. Please feel free to contact me if you are impressed by my
+          qualifications and need assistance with a programming project.
         </Paragraph>
         <Box align="center" my={4}>
           <Link as={NextLink} href="/works">
@@ -183,6 +180,31 @@ const Page = () => {
             </Link>
           </ListItem>
         </List>
+      </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Contact
+        </Heading>
+        <form
+          action="https://formsubmit.co/layinka4dat@gmail.com"
+          method="post"
+        >
+          <FormControl mb={4}>
+            <FormLabel>Email address</FormLabel>
+            <Input required placeholder="Enter Your Email" type="email" />
+          </FormControl>
+          <FormControl>
+            <FormLabel> Message</FormLabel>
+            <Textarea required placeholder="Enter Message " type="text" />
+          </FormControl>
+          <Button mt={4} colorScheme="teal" type="submit">
+            Submit
+          </Button>
+        </form>
+      </Section>
+
+      <Section>
+        <Box align="center">Copyright &copy; 2023 YinkTech.</Box>
       </Section>
     </Container>
   );
