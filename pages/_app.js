@@ -4,6 +4,7 @@ import theme from "./../lib/theme";
 import Fonts from "./fonts";
 import { AnimatePresence } from "framer-motion";
 import "./cursor.css";
+import ErrorBoundary from "../components/ErrorBoundary";
 
 const Website = ({ Component, pageProps, router }) => {
   if (typeof window !== "undefined") {
@@ -24,7 +25,9 @@ const Website = ({ Component, pageProps, router }) => {
             }
           }}
         >
-          <Component {...pageProps} key={router.route} />
+          <ErrorBoundary>
+            <Component {...pageProps} key={router.route} />
+          </ErrorBoundary>
         </AnimatePresence>
       </Layout>
     </ChakraProvider>
