@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import Logo from "./logo";
 import NextLink from "next/link";
 import {
@@ -16,7 +17,6 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
-import { forwardRef } from "react";
 import { IoLogoGithub } from "react-icons/io5";
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
