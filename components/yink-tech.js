@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { useRef } from "react";
+import Image from "next/image";
 
 const YinkTech = () => {
   const refContainer = useRef();
@@ -18,10 +19,10 @@ const YinkTech = () => {
         <div id="container">
           <div id="monitor">
             <div id="monitorscreen">
-              <img
-                alt="code dev"
+              <Image
+              fill
                 src="/code.gif"
-                style={{ width: "400px", height: "200px" }}
+                alt="code dev"
               />
             </div>
           </div>

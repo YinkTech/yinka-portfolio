@@ -13,7 +13,7 @@ import { useEffect } from "react";
 
 const Website = ({ Component, pageProps, router }) => {
   const cursorX = useMotionValue(-100);
-  const cursorY = useMotionValue(-100);
+  const cursorY = useMotionValue(-100); 
   const springConfig = { damping: 25, stiffness: 700 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
@@ -31,7 +31,7 @@ const Website = ({ Component, pageProps, router }) => {
     return () => {
       window.removeEventListener("mousemove", moveCursor);
     };
-  }, []);
+  }, [cursorX, cursorY]);
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
