@@ -2,8 +2,8 @@
 
 > My Portfolio showcasing projects built with JavaScript, React & Redux, Ruby and Ruby on Rails.
 
-
 ## # Portfolio
+
 ![screenshot](./docs/HomeScreen.png)
 
 ## Stack
@@ -27,6 +27,7 @@
 - LinkedIn: [Ayeni Olayinka](https://www.linkedin.com/in/yinktech/)
 
 ## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/YinkTech/portfolio/issues).
@@ -35,7 +36,7 @@ Feel free to check the [issues page](https://github.com/YinkTech/portfolio/issue
 
 Give a ⭐️ if you like this project!
 
-
 ## License
+
 - MIT License.
-- Acknoledge  [Takuya's Homepage](https://github.com/craftzdog/craftzdog-homepage)  for Knowlege and Design Inspiration 
+- Acknoledge [Takuya's Homepage](https://github.com/craftzdog/craftzdog-homepage) for Knowlege and Design Inspiration
