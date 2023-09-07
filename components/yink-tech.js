@@ -19,11 +19,7 @@ const YinkTech = () => {
         <div id="container">
           <div id="monitor">
             <div id="monitorscreen">
-              <Image
-              fill
-                src="/code.gif"
-                alt="code dev"
-              />
+              <Image fill src="/code.gif" alt="code dev" />
             </div>
           </div>
         </div>

@@ -1,5 +1,3 @@
-/* eslint-disable react/display-name */
-
 import { forwardRef } from "react";
 import Logo from "./logo";
 import NextLink from "next/link";

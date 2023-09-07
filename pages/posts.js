@@ -14,10 +14,10 @@ const Posts = () => {
         </Heading>
         <Section delay={0.1}>
           <SimpleGrid column={[1, 2, 2]} gap={6}>
-            <GridItem 
-            title="What are 3 pieces of advice"
-            thumbnail={meduims}
-            href='https://medium.com/@layinka4dat/what-are-3-pieces-of-advice-that-you-would-give-someone-whos-just-beginning-their-journey-with-c8d450b83991'
+            <GridItem
+              title="What are 3 pieces of advice"
+              thumbnail={meduims}
+              href="https://medium.com/@layinka4dat/what-are-3-pieces-of-advice-that-you-would-give-someone-whos-just-beginning-their-journey-with-c8d450b83991"
             />
           </SimpleGrid>
         </Section>

@@ -9,8 +9,8 @@ export const Title = ({ children }) => (
     </Link>
 
     <span>
-      {' '}
-      <ChevronRightIcon />{' '}
+      {" "}
+      <ChevronRightIcon />{" "}
     </span>
     <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
       {children}
@@ -26,4 +26,4 @@ export const Meta = ({ children }) => (
   <Badge colorScheme="green" mr={2}>
     {children}
   </Badge>
-)
+);

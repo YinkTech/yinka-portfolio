@@ -68,7 +68,7 @@ const Page = () => {
           Work
         </Heading>
         <Paragraph>
-          Yinka is a full-stack software developer passionate about creating
+          I&apos;m is a full-stack software developer passionate about creating
           innovative, user-friendly websites, features, and products. My
           portfolio showcases a selection of my work and demonstrates my
           technical skills and experience.{" "}
@@ -136,7 +136,10 @@ const Page = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.instagram.com/yinktech.inc/" target="_blank">
+            <Link
+              href="https://www.instagram.com/yinktech.inc/"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
