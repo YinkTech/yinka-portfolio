@@ -19,6 +19,7 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
 import { IoLogoGithub } from "react-icons/io5";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import MusicPlayer from "../lib/music";
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path == href;
@@ -110,6 +111,7 @@ const NavBar = (props) => {
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
+          <MusicPlayer />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton

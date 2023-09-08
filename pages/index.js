@@ -7,13 +7,12 @@ import {
   Icon,
   Image,
   Link,
-  ListItem,
-  List,
   useColorModeValue,
   FormControl,
   FormLabel,
   Input,
   Textarea,
+  flexbox,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -120,19 +119,18 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           On the Web
         </Heading>
-        <List>
-          <ListItem>
+        <Box >
+          <span>
             <Link href="https://github.com/YinkTech" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @YinkTech
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </span>
+          <span>
             <Link
               href="https://www.instagram.com/yinktech.inc/"
               target="_blank"
@@ -142,46 +140,42 @@ const Page = () => {
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
-                @YinkTech
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </span>
+          <span>
             <Link href="https://www.discord.com/yinktech/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoDiscord} />}
               >
-                @YinkTech
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </span>
+          <span>
             <Link href="https://www.linkedin.com/in/yinktech/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoLinkedin} />}
               >
-                @YinkTech
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </span>
+          <span>
             <Link href="https://twitter.com/olayinkaayeni00" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >
-                @Olayinka Ayeni
               </Button>
             </Link>
-          </ListItem>
-        </List>
+          </span>
+        </Box>
       </Section>
-      <Section delay={0.3}>
+      <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
           Contact
         </Heading>
