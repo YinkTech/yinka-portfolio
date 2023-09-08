@@ -12,7 +12,6 @@ import {
   FormLabel,
   Input,
   Textarea,
-  flexbox,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
