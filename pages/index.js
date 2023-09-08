@@ -191,11 +191,21 @@ const Page = () => {
         >
           <FormControl mb={4}>
             <FormLabel>Email address</FormLabel>
-            <Input required placeholder="Enter Your Email" type="email" />
+            <Input
+              required
+              name="Email"
+              placeholder="Enter Your Email"
+              type="email"
+            />
           </FormControl>
           <FormControl>
             <FormLabel> Message</FormLabel>
-            <Textarea required placeholder="Enter Message " type="text" />
+            <Textarea
+              name="Message"
+              required
+              placeholder="Enter Message "
+              type="text"
+            />
           </FormControl>
           <Button mt={4} colorScheme="teal" type="submit">
             Submit
