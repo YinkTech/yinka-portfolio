@@ -118,15 +118,14 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           On the Web
         </Heading>
-        <Box >
+        <Box>
           <span>
             <Link href="https://github.com/YinkTech" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
-              >
-              </Button>
+              ></Button>
             </Link>
           </span>
           <span>
@@ -138,8 +137,7 @@ const Page = () => {
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
-              >
-              </Button>
+              ></Button>
             </Link>
           </span>
           <span>
@@ -148,8 +146,7 @@ const Page = () => {
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoDiscord} />}
-              >
-              </Button>
+              ></Button>
             </Link>
           </span>
           <span>
@@ -158,8 +155,7 @@ const Page = () => {
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoLinkedin} />}
-              >
-              </Button>
+              ></Button>
             </Link>
           </span>
           <span>
@@ -168,8 +164,7 @@ const Page = () => {
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-              </Button>
+              ></Button>
             </Link>
           </span>
         </Box>
