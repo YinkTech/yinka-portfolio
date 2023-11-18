@@ -1,18 +1,18 @@
-import {
-  Box,
-  Button,
-  Heading,
-  Icon,
-  Image,
-  Link,
-  useColorModeValue,
-  FormControl,
-  FormLabel,
-  Input,
-  Textarea,
-} from "@chakra-ui/react";
-import Paragraph from "../components/paragraph";
-import Section from "../components/section";
+// import {
+//   Box,
+//   Button,
+//   Heading,
+//   Icon,
+//   Image,
+//   Link,
+//   useColorModeValue,
+//   FormControl,
+//   FormLabel,
+//   Input,
+//   Textarea,
+// } from "@chakra-ui/react";
+// import Paragraph from "../components/paragraph";
+// import Section from "../components/section";
 
 const FrontWork = () => {
   return (
