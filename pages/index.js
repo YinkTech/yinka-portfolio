@@ -2,7 +2,6 @@ import NextLink from "next/link";
 import {
   Box,
   Button,
-  Container,
   Heading,
   Icon,
   Image,
@@ -16,7 +15,7 @@ import {
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { BioSection, BioYear } from "../components/bio";
+import { BioSection, BioYear, WorksShow } from "../components/bio";
 import {
   IoLogoDiscord,
   IoLogoGithub,
@@ -24,10 +23,12 @@ import {
   IoLogoLinkedin,
   IoLogoTwitter,
 } from "react-icons/io5";
+import FrontWork from "./FrontWork";
+import ToolBox from "../components/ToolBox";
 
 const Page = () => {
   return (
-    <Container>
+    <>
       <Box
         borderRadius="lg"
         bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
@@ -35,8 +36,9 @@ const Page = () => {
         mb={6}
         align="center"
       >
-        Hello, I&apos;m a full-stack developer based in Nigeria!{" "}
-        <span className="waving-hand">👋</span>
+        Hello there <span className="waving-hand">👋</span>! I&apos;m Olayinka,
+        a passionate Frontend Developer <span className="waving-hand">🚀</span>{" "}
+        who crafts web experiences!
       </Box>
 
       <Box display={{ md: "flex" }}>
@@ -44,7 +46,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Olayinka Ayeni
           </Heading>
-          <p>( Engineering / Developer / Designer ) </p>
+          <p>( Developer / Designer / Engineer ) </p>
         </Box>
         <Box
           flexShrink={0}
@@ -67,34 +69,45 @@ const Page = () => {
       </Box>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About
         </Heading>
         <Paragraph>
-          I&apos;m a skilled software developer with expertise in multiple
-          websites and web application development platforms. I am an avid
-          reader with a strong work ethic. I have knowledge of technologies
-          including React, JavaScript, Ruby, and Ruby on Rails. Through my
-          experience in the field, I have developed a strong understanding of
-          the development process and the ability to deliver high-quality
-          solutions. I am excited to use my skills to help bring your ideas to
-          life. Please feel free to contact me if you are impressed by my
-          qualifications and need assistance with a programming project.
+          I&apos;m a dedicated Frontend Developer with a deep passion for
+          crafting engaging and user-friendly web experiences. Proficient in
+          cutting-edge technologies such as React & Redux, HTML5, CSS3, and
+          JavaScript, I specialize in building responsive and visually appealing
+          web applications. I bring a keen eye for design and a commitment to
+          creating seamless user interfaces for every project. With a track
+          record of delivering high-quality frontend solutions, I&apos;m driven
+          by a relentless pursuit of excellence in the ever-evolving world of
+          web development.
         </Paragraph>
-        <Box align="center" my={4}>
-          <Link as={NextLink} href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My Portfolio
-            </Button>
-          </Link>
-        </Box>
       </Section>
       <Section delay={0.2} textAlign="justify">
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <BioSection>
-          <BioYear>March 3,</BioYear>
-          Born in Ibadan, Nigeria.
+          <BioYear>
+            Who Is Olayinka? An inquisitive Front-End Developer with a flair for
+            design.
+          </BioYear>
+
+          <Paragraph>
+            {" "}
+            With an unwavering passion for web development, I've dedicated
+            myself to the art of creating exceptional digital experiences that
+            seamlessly blend cutting-edge technologies like React & Redux,
+            HTML5, CSS3, and JavaScript to craft responsive and visually
+            captivating web applications. As a Frontend Developer, I bring not
+            only technical proficiency but also a keen eye for design,
+            consistently striving to deliver high-quality solutions that not
+            only meet but exceed user expectations. My journey in this
+            ever-evolving world of web development has been marked by a
+            relentless pursuit of excellence, as I tackle complex challenges,
+            build engaging user interfaces, and leave a lasting mark on the
+            digital landscape.
+          </Paragraph>
         </BioSection>
       </Section>
       <Section delay={0.3}>
@@ -114,7 +127,31 @@ const Page = () => {
           Solving Problem, Games, Team Work.
         </Paragraph>
       </Section>
-      <Section delay={0.3}>
+      <ToolBox />
+      <Section delay={0.5}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <BioYear>Currently working on:</BioYear>
+
+        <Paragraph>
+          "Continuously enhancing my expertise in various JavaScript libraries
+          and having a blast crafting and animating elements using GSAP and
+          Framer Motion. Join me on my journey!"
+        </Paragraph>
+        <WorksShow>A Showcase of My Creations:</WorksShow>
+        <Box>
+          <FrontWork />
+        </Box>
+      </Section>
+        <Box align="center" my={4}>
+          <Link as={NextLink} href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My Portfolio
+            </Button>
+          </Link>
+        </Box>
+      <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
           On the Web
         </Heading>
@@ -169,7 +206,7 @@ const Page = () => {
           </span>
         </Box>
       </Section>
-      <Section delay={0.4}>
+      <Section delay={0.5}>
         <Heading as="h3" variant="section-title">
           Contact
         </Heading>
@@ -204,7 +241,7 @@ const Page = () => {
       <Section>
         <Box align="center">Copyright &copy; 2023 YinkTech.</Box>
       </Section>
-    </Container>
+    </>
   );
 };
 

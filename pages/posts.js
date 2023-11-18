@@ -2,8 +2,7 @@ import { Heading, SimpleGrid, Container } from "@chakra-ui/react";
 import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import { GridItem } from "../components/grid-item";
-
-import meduims from "./../public/images/works/meduim.png";
+import { PostData } from "../components/Data";
 
 const Posts = () => {
   return (
@@ -14,11 +13,16 @@ const Posts = () => {
         </Heading>
         <Section delay={0.1}>
           <SimpleGrid column={[1, 2, 2]} gap={6}>
-            <GridItem
-              title="What are 3 pieces of advice"
-              thumbnail={meduims}
-              href="https://medium.com/@layinka4dat/what-are-3-pieces-of-advice-that-you-would-give-someone-whos-just-beginning-their-journey-with-c8d450b83991"
-            />
+            {PostData.map((data, id) => {
+              return (
+                <GridItem
+                  key={id}
+                  title={data.titles}
+                  thumbnail={data.thumbnails}
+                  href={data.hrefLinks}
+                />
+              );
+            })}
           </SimpleGrid>
         </Section>
       </Container>

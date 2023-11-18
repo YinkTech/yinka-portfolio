@@ -66,7 +66,7 @@ const NavBar = (props) => {
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-            <Logo />
+              <Logo />
           </Heading>
         </Flex>
 
@@ -98,7 +98,7 @@ const NavBar = (props) => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://docs.google.com/document/d/16dakAnpj3XhFMDO90oRqfDkKGbgS7BNluXS3Kzd7uoo/edit"
+            href="https://docs.google.com/document/d/1OCg0otg3OSMD0y_QPHjQtkWG8CZTtM2KcLoZUh-FDoc/edit?usp=sharing"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -120,9 +120,6 @@ const NavBar = (props) => {
                 variant="outline"
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="/">
-                  About
-                </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
@@ -138,7 +135,7 @@ const NavBar = (props) => {
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="hhttps://docs.google.com/document/d/16dakAnpj3XhFMDO90oRqfDkKGbgS7BNluXS3Kzd7uoo/edit"
+                  href="https://docs.google.com/document/d/1OCg0otg3OSMD0y_QPHjQtkWG8CZTtM2KcLoZUh-FDoc/edit?usp=sharing"
                   style={{ gap: 4 }}
                 >
                   <ExternalLinkIcon /> Resume

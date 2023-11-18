@@ -9,8 +9,8 @@ const YinkTech = () => {
       ref={refContainer}
       className="yink-tech"
       m="auto"
-      mt={["10px", "-60px", "10px"]}
-      mb={["-90px", "-140px", "0px"]}
+      mt={["50px", "30px", "10px"]}
+      mb={["-90px", "-100px", "0px"]}
       w={[280, 280, 400]}
       h={[280, 280, 260]}
       position="relative"
