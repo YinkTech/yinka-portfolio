@@ -98,7 +98,7 @@ const NavBar = (props) => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://docs.google.com/document/d/1OCg0otg3OSMD0y_QPHjQtkWG8CZTtM2KcLoZUh-FDoc/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1_6Ao87LQJi7J8DI_yCyGFubUXG6pCh4nq77Efqt6aAI/edit?usp=sharing"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -135,7 +135,7 @@ const NavBar = (props) => {
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://docs.google.com/document/d/1OCg0otg3OSMD0y_QPHjQtkWG8CZTtM2KcLoZUh-FDoc/edit?usp=sharing"
+                  href="https://docs.google.com/document/d/1_6Ao87LQJi7J8DI_yCyGFubUXG6pCh4nq77Efqt6aAI/edit?usp=sharing"
                   style={{ gap: 4 }}
                 >
                   <ExternalLinkIcon /> Resume
