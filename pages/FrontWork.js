@@ -15,7 +15,7 @@ const FrontWork = () => {
                 title={data.titles}
                 thumbnail={data.thumbnails}
                 href={data.hrefLinks}
-                children={shortenText(data.description, 40)}
+                description={shortenText(data.description, 70)}
               />
             );
           })}

@@ -3,7 +3,7 @@ import { Global } from "@emotion/react";
 import Image from "next/image";
 import NextLink from "next/link";
 
-export const HomeGridItem = ({ children, href, title, thumbnail }) => (
+export const HomeGridItem = ({ description, href, title, thumbnail }) => (
   <Box w="80%" margin="auto" textAlign="center">
     <LinkBox as={NextLink} scroll={false} legacyBehavior cursor="pointer" href={href}>
       <a target="_blank" rel="noopener noreferrer">
@@ -18,7 +18,7 @@ export const HomeGridItem = ({ children, href, title, thumbnail }) => (
             {title}
           </Text>
         </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
+        <Text fontSize={14}>{description}</Text>
       </a>
     </LinkBox>
   </Box>
