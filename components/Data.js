@@ -4,16 +4,78 @@ import react1 from "./../public/images/post/react1.png";
 import react2 from "./../public/images/post/react2.png";
 import react3 from "./../public/images/post/react3.png";
 import WinWin from "./../public/images/post/Win-Win.png";
-import thumbInkdrop from "./../public/images/works/thumbInkdrop.png";
-import thumbHeart from "./../public/images/works/thumbHeart.png";
-import thumbWeb3 from "./../public/images/works/web3-project.png";
-import thumbCoins from "./../public/images/works/coins-desktop1.png";
+import stockMarket from "./../public/images/works/stockmarket.png";
+import thumbHeart from "./../public/images/works/homeheart.png";
+import thumbWeb3 from "./../public/images/works/web3.png";
+import thumbCoins from "./../public/images/works/coinMarket.png";
+import moviebox from "./../public/images/works/moviebox.png";
+import Homemoviebox from "./../public/images/works/movie-box-azure.vercel.app_(Nest Hub Max).png";
+import funImage from "./../public/images/works/funImage.png";
+import HomefunImage from "./../public/images/works/fun-image-gallery.vercel.app_(Nest Hub Max).png";
+import andriod from "./../public/images/works/andriod.png";
+import yshop from "./../public/images/works/yshop.png";
+
+export const homeData = [
+  {
+    titles: "Movie Box",
+    thumbnails: Homemoviebox,
+    hrefLinks: "https://movie-box-azure.vercel.app/",
+    description: `A web application designed for movie enthusiasts, enabling users to explore, search for movies, view detailed
+    information about them, sort movies based on preferences, and preview movie trailers. This application is built
+    using React, styled with Tailwind and Chakra UI, and utilizes the TMDB API for movie data.
+    `
+  },
+  {
+    titles: "Image Gallery ",
+    thumbnails: HomefunImage,
+    hrefLinks: "https://fun-image-gallery.vercel.app/",
+    description: `A  web application built with React.js that leverages Firebase for user login and authentication. It features a fully
+    functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for
+    image sourcing.
+    `
+  },
+];
 
 export const WorkData = [
   {
+    id: "movie-box ",
+    title: "Movie Box",
+    thumbnail: moviebox,
+    description: `A web application designed for movie enthusiasts, enabling users to explore, search for movies, view detailed
+    information about them, sort movies based on preferences, and preview movie trailers. This application is built
+    using React, styled with Tailwind and Chakra UI, and utilizes the TMDB API for movie data.
+    `,
+  },
+  {
+    id: "image-gallery ",
+    title: "Image Gallery",
+    thumbnail: funImage,
+    description: `A  web application built with React.js that leverages Firebase for user login and authentication. It features a fully
+    functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for
+    image sourcing.
+    `,
+  },
+  {
+    id: "yshop ",
+    title: "Y  Shop",
+    thumbnail: yshop,
+    description: `An e-commerce web application built with React.js and a Dummy API. This application showcases products
+    along with their details and offers discounts on each product.
+    `,
+  },
+  {
+    id: "andriod ",
+    title: "Andriod Website Clone    ",
+    thumbnail: andriod,
+    description: `A replicated version of an Android website, demonstrating proficiency in React.js and Tailwind. This project
+    showcases an understanding of props and state management across different components.
+    .
+    `,
+  },
+  {
     id: "stock-market",
     title: "stock-market",
-    thumbnail: thumbInkdrop,
+    thumbnail: stockMarket,
     description:
       "This is a React-Redux app that displays all the cryptocurrency coins and display their details on a new page with....",
   },
@@ -36,31 +98,7 @@ export const WorkData = [
     thumbnail: thumbCoins,
     description:
       "This project is a captone project in javascript, where data is been fetched from api....",
-  },
-  // {
-  //   id: "",
-  //   title: "",
-  //   thumbnail: ,
-  //   description: "",
-  // },
-  // {
-  //   id: "",
-  //   title: "",
-  //   thumbnail: ,
-  //   description: "",
-  // },
-  // {
-  //   id: "",
-  //   title: "",
-  //   thumbnail: ,
-  //   description: "",
-  // },
-  // {
-  //   id: "",
-  //   title: "",
-  //   thumbnail: ,
-  //   description: "",
-  // },
+  }
 ];
 
 export const PostData = [

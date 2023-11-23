@@ -64,7 +64,7 @@ const NavBar = (props) => {
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={5}>
+        <Flex align="center" mr={{ base: 0, nmd: 5}}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
               <Logo />
           </Heading>

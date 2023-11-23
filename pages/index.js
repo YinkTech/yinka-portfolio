@@ -128,7 +128,7 @@ const Page = () => {
         </Paragraph>
       </Section>
       <ToolBox />
-      <Section delay={0.5}>
+      <Section   delay={0.5}>
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
@@ -139,7 +139,7 @@ const Page = () => {
           and having a blast crafting and animating elements using GSAP and
           Framer Motion. Join me on my journey!"
         </Paragraph>
-        <WorksShow>A Showcase of My Creations:</WorksShow>
+        <WorksShow> A Showcase of My Creations:</WorksShow>
         <Box>
           <FrontWork />
         </Box>

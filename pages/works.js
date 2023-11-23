@@ -3,6 +3,7 @@ import Section from "../components/section";
 import { WorkGridItem } from "./../components/grid-item";
 import Layout from "../components/layouts/article";
 import { WorkData } from "../components/Data";
+import { shortenText } from "../components/layouts/shorthand";
 
 const Works = () => {
   return (
@@ -20,7 +21,7 @@ const Works = () => {
                   title={data.title}
                   thumbnail={data.thumbnail}
                 >
-                  {data.description}
+                   {shortenText(data.description, 51)}
                 </WorkGridItem>
               </Section>
             );
