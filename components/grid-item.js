@@ -5,21 +5,18 @@ import NextLink from "next/link";
 
 export const HomeGridItem = ({ description, href, title, thumbnail }) => (
   <Box w="80%" margin="auto" textAlign="center">
-    <LinkBox as={NextLink} scroll={false} legacyBehavior cursor="pointer" href={href}>
-      <a target="_blank" rel="noopener noreferrer">
+    <LinkBox as={NextLink} target="_blank" scroll={false}  cursor="pointer" href={href}>
+
         <Image
           src={thumbnail}
           alt={title}
           className="grid-item-thumbnail"
           placeholder="blur"
         />
-        <LinkOverlay as="div" href={href}>
           <Text mt={2} fontSize={20}>
             {title}
           </Text>
-        </LinkOverlay>
         <Text fontSize={14}>{description}</Text>
-      </a>
     </LinkBox>
   </Box>
 );
