@@ -14,6 +14,7 @@ import funImage from "./../public/images/works/funImage.png";
 import HomefunImage from "./../public/images/works/fun-image-gallery.vercel.app_(Nest Hub Max).png";
 import andriod from "./../public/images/works/andriod.png";
 import yshop from "./../public/images/works/yshop.png";
+import HomeAndriod from "./../public/images/works/andriodredesi.png";
 
 export const homeData = [
   {
@@ -32,6 +33,15 @@ export const homeData = [
     description: `A  web application built with React.js that leverages Firebase for user login and authentication. It features a fully
     functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for
     image sourcing.
+    `
+  },
+  {
+    titles: "Andriod Website Clone",
+    thumbnails: HomeAndriod,
+    hrefLinks: "https://andriodredesign.vercel.app/",
+    description: `A replicated version of an Android website, demonstrating proficiency in React.js and Tailwind. This project
+    showcases an understanding of props and state management across different components.
+    .
     `
   },
 ];

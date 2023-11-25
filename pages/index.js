@@ -196,7 +196,7 @@ const Page = () => {
             </Link>
           </span>
           <span>
-            <Link href="https://twitter.com/olayinkaayeni00" target="_blank">
+            <Link href="https://twitter.com/yinkabayeni" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
