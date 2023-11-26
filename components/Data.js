@@ -22,18 +22,18 @@ export const homeData = [
     thumbnails: Homemoviebox,
     hrefLinks: "https://movie-box-azure.vercel.app/",
     description: `A web application designed for movie enthusiasts, enabling users to explore, search for movies, view detailed
-    information about them, sort movies based on preferences, and preview movie trailers. This application is built
+                  information about them, sort movies based on preferences, and preview movie trailers. This application is built
     using React, styled with Tailwind and Chakra UI, and utilizes the TMDB API for movie data.
-    `
+    `,
   },
   {
     titles: "Image Gallery ",
     thumbnails: HomefunImage,
     hrefLinks: "https://fun-image-gallery.vercel.app/",
     description: `A  web application built with React.js that leverages Firebase for user login and authentication. It features a fully
-    functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for
+                  functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for
     image sourcing.
-    `
+    `,
   },
   {
     titles: "Andriod Website Clone",
@@ -41,8 +41,7 @@ export const homeData = [
     hrefLinks: "https://andriodredesign.vercel.app/",
     description: `A replicated version of an Android website, demonstrating proficiency in React.js and Tailwind. This project
     showcases an understanding of props and state management across different components.
-    .
-    `
+    `,
   },
 ];
 
@@ -108,7 +107,7 @@ export const WorkData = [
     thumbnail: thumbCoins,
     description:
       "This project is a captone project in javascript, where data is been fetched from api....",
-  }
+  },
 ];
 
 export const PostData = [

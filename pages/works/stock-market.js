@@ -20,13 +20,14 @@ const Work = () => {
           <ListItem>
             <Meta>website</Meta>
             <Link href="https://yinktech.github.io/Stock-Market">
-            https://yinktech.github.io/Stock-Market <ExternalLinkIcon mx="2pz" />{" "}
+              https://yinktech.github.io/Stock-Market{" "}
+              <ExternalLinkIcon mx="2pz" />{" "}
             </Link>
           </ListItem>
           <ListItem>
             <Meta>GitHub</Meta>
             <Link href="https://github.com/YinkTech/Stock-Market">
-            https://github.com/YinkTech/Stock-Market{" "}
+              https://github.com/YinkTech/Stock-Market{" "}
               <ExternalLinkIcon mx="2pz" />{" "}
             </Link>
           </ListItem>

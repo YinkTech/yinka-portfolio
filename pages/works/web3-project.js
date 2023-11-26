@@ -11,20 +11,19 @@ const Work = () => {
         <Title>
           web3-project <Badge>2022</Badge>
         </Title>
-        <P>
-        web3-decentralize React page.
-        </P>
+        <P>web3-decentralize React page.</P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>website</Meta>
             <Link href="https://yinktech.github.io/web3-project/">
-            https://yinktech.github.io/web3-project/ <ExternalLinkIcon mx="2pz" />{" "}
+              https://yinktech.github.io/web3-project/{" "}
+              <ExternalLinkIcon mx="2pz" />{" "}
             </Link>
           </ListItem>
           <ListItem>
             <Meta>GitHub</Meta>
             <Link href="https://github.com/YinkTech/web3-project">
-            https://github.com/YinkTech/web3-project{" "}
+              https://github.com/YinkTech/web3-project{" "}
               <ExternalLinkIcon mx="2pz" />{" "}
             </Link>
           </ListItem>

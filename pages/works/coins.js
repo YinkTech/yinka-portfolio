@@ -36,7 +36,10 @@ const Work = () => {
             <span>HTML, CSS, JavaScript, Webpack</span>
           </ListItem>
         </List>
-        <WorkImage src="/images/works/coins-desktop1.png" alt="Coins-Marketplace" />
+        <WorkImage
+          src="/images/works/coins-desktop1.png"
+          alt="Coins-Marketplace"
+        />
         <WorkImage
           src="/images/works/coins-desktop2.png"
           alt="Coins-Marketplace"

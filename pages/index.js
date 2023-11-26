@@ -128,7 +128,7 @@ const Page = () => {
         </Paragraph>
       </Section>
       <ToolBox />
-      <Section   delay={0.5}>
+      <Section delay={0.5}>
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
@@ -144,13 +144,13 @@ const Page = () => {
           <FrontWork />
         </Box>
       </Section>
-        <Box align="center" my={4}>
-          <Link as={NextLink} href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My Portfolio
-            </Button>
-          </Link>
-        </Box>
+      <Box align="center" my={4}>
+        <Link as={NextLink} href="/works">
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            My Portfolio
+          </Button>
+        </Link>
+      </Box>
       <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
           On the Web
