@@ -21,7 +21,7 @@ const Works = () => {
                   title={data.title}
                   thumbnail={data.thumbnail}
                 >
-                   {shortenText(data.description, 51)}
+                  {shortenText(data.description, 51)}
                 </WorkGridItem>
               </Section>
             );

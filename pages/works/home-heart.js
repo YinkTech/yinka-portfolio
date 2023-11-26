@@ -36,8 +36,8 @@ const Work = () => {
             <span>ReactJS, Redux, HTML & CSS, Ruby on Rails</span>
           </ListItem>
         </List>
-        <WorkImage src='/images/works/thumbHeart.png' alt='HomeHeart' />
-        <WorkImage src='/images/works/thumbHeart2.png' alt='HomeHeart' />
+        <WorkImage src="/images/works/thumbHeart.png" alt="HomeHeart" />
+        <WorkImage src="/images/works/thumbHeart2.png" alt="HomeHeart" />
       </Container>
     </Layout>
   );

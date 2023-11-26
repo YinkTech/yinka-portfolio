@@ -23,8 +23,8 @@ export const homeData = [
     hrefLinks: "https://movie-box-azure.vercel.app/",
     description: `A web application designed for movie enthusiasts, enabling users to explore, search for movies, view detailed
                   information about them, sort movies based on preferences, and preview movie trailers. This application is built
-    using React, styled with Tailwind and Chakra UI, and utilizes the TMDB API for movie data.
-    `,
+                  using React, styled with Tailwind and Chakra UI, and utilizes the TMDB API for movie data.
+                  `,
   },
   {
     titles: "Image Gallery ",
@@ -59,14 +59,14 @@ export const WorkData = [
     id: "image-gallery ",
     title: "Image Gallery",
     thumbnail: funImage,
-    description: `A  web application built with React.js that leverages Firebase for user login and authentication. It features a fully
+    description: `A web application built with React.js that leverages Firebase for user login and authentication. It features a fully
     functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for
     image sourcing.
     `,
   },
   {
     id: "yshop ",
-    title: "Y  Shop",
+    title: "Y Shop",
     thumbnail: yshop,
     description: `An e-commerce web application built with React.js and a Dummy API. This application showcases products
     along with their details and offers discounts on each product.
@@ -74,7 +74,7 @@ export const WorkData = [
   },
   {
     id: "andriod ",
-    title: "Andriod Website Clone    ",
+    title: "Andriod Website Clone",
     thumbnail: andriod,
     description: `A replicated version of an Android website, demonstrating proficiency in React.js and Tailwind. This project
     showcases an understanding of props and state management across different components.
