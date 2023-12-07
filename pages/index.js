@@ -83,7 +83,30 @@ const Page = () => {
           web development.
         </Paragraph>
       </Section>
-      <Section delay={0.2} textAlign="justify">
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <BioYear>Currently working on:</BioYear>
+
+        <Paragraph>
+          "Continuously enhancing my expertise in various JavaScript libraries
+          and having a blast crafting and animating elements using GSAP and
+          Framer Motion. Join me on my journey!"
+        </Paragraph>
+        <WorksShow> A Showcase of My Creations:</WorksShow>
+        <Box>
+          <FrontWork />
+        </Box>
+      </Section>
+      <Box align="center" my={4}>
+        <Link as={NextLink} href="/works">
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            My Portfolio
+          </Button>
+        </Link>
+      </Box>
+      <Section delay={0.3} textAlign="justify">
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
@@ -110,7 +133,7 @@ const Page = () => {
           </Paragraph>
         </BioSection>
       </Section>
-      <Section delay={0.3}>
+      <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
           I ♡
         </Heading>
@@ -129,29 +152,6 @@ const Page = () => {
       </Section>
       <ToolBox />
       <Section delay={0.5}>
-        <Heading as="h3" variant="section-title">
-          Work
-        </Heading>
-        <BioYear>Currently working on:</BioYear>
-
-        <Paragraph>
-          "Continuously enhancing my expertise in various JavaScript libraries
-          and having a blast crafting and animating elements using GSAP and
-          Framer Motion. Join me on my journey!"
-        </Paragraph>
-        <WorksShow> A Showcase of My Creations:</WorksShow>
-        <Box>
-          <FrontWork />
-        </Box>
-      </Section>
-      <Box align="center" my={4}>
-        <Link as={NextLink} href="/works">
-          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-            My Portfolio
-          </Button>
-        </Link>
-      </Box>
-      <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
           On the Web
         </Heading>
@@ -206,7 +206,7 @@ const Page = () => {
           </span>
         </Box>
       </Section>
-      <Section delay={0.5}>
+      <Section delay={0.6}>
         <Heading as="h3" variant="section-title">
           Contact
         </Heading>
