@@ -4,7 +4,6 @@ import {
   LinkBox,
   LinkOverlay,
   SimpleGrid,
-  Center,
   Link,
   Button,
   Icon,
@@ -48,10 +47,11 @@ export const NewHomeGridItem = ({
         {" "}
         <span style={{ fontWeight: "bold" }}> Stack/Tools: </span> {stackList}
       </Text>
-      <Center>
+      <Box>
         <span>
           <Link href={githubLink} target="_blank">
             <Button
+            maxW={0}
               variant="ghost"
               colorScheme="red.500"
               fontSize={23}
@@ -70,7 +70,7 @@ export const NewHomeGridItem = ({
             ></Button>
           </Link>
         </span>
-      </Center>
+      </Box>
       </Box>
     </SimpleGrid>
   </Box>
