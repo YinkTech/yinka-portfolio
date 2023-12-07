@@ -22,18 +22,20 @@ export const homeData = [
     thumbnails: Homemoviebox,
     hrefLinks: "https://movie-box-azure.vercel.app/",
     description: `A web application designed for movie enthusiasts, enabling users to explore, search for movies, view detailed
-                  information about them, sort movies based on preferences, and preview movie trailers. This application is built
-                  using React, styled with Tailwind and Chakra UI, and utilizes the TMDB API for movie data.
+                  information about them, sort movies based on preferences, and preview movie trailers.
                   `,
+    stackList: "React, Tailwind, Chakra UI,TMDB API",
+    githubLink: "https://github.com/YinkTech/MovieBox",
   },
   {
     titles: "Image Gallery ",
     thumbnails: HomefunImage,
     hrefLinks: "https://fun-image-gallery.vercel.app/",
     description: `A  web application built with React.js that leverages Firebase for user login and authentication. It features a fully
-                  functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for
-    image sourcing.
+                  functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for image sourcing.
     `,
+    stackList: "React, Tailwind, FireBase, Art Institute of Chicago API",
+    githubLink: "https://github.com/YinkTech/Image-Gallery",
   },
   {
     titles: "Andriod Website Clone",
@@ -42,6 +44,8 @@ export const homeData = [
     description: `A replicated version of an Android website, demonstrating proficiency in React.js and Tailwind. This project
     showcases an understanding of props and state management across different components.
     `,
+    stackList: "React, Tailwind",
+    githubLink: "https://github.com/YinkTech/andriod-redesign",
   },
 ];
 

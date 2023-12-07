@@ -1,21 +1,23 @@
 import {  SimpleGrid } from "@chakra-ui/react";
 import { homeData } from "../components/Data";
 import Section from "../components/section";
-import { HomeGridItem } from "../components/grid-item";
-import { shortenText } from "../components/layouts/shorthand";
+import { NewHomeGridItem } from "../components/grid-item";
 
 const FrontWork = () => {
   return (
       <Section delay={0.1}>
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <SimpleGrid marginTop="10px" columns={[1, 1, 1, 1]} gap={6}>
           {homeData.map((data, id) => {
             return (
-              <HomeGridItem
+
+              <NewHomeGridItem
                 key={id}
                 title={data.titles}
                 thumbnail={data.thumbnails}
                 href={data.hrefLinks}
-                description={shortenText(data.description, 70)}
+                description={data.description}
+                stackList={data.stackList}
+                githubLink={data.githubLink}
               />
             );
           })}

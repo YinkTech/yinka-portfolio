@@ -130,3 +130,10 @@
     }
   }
 }
+
+.NewHomeImage {
+  transition: 0.4s all ease-in-out ;
+ }
+.NewHomeImage:hover {
+  transform: scale(.9);
+}
