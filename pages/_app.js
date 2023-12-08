@@ -7,6 +7,8 @@ import "./cursor.css";
 import React, { useEffect } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
+import ParticlesComponent from "./particles";
+
 const Website = ({ Component, pageProps, router }) => {
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
@@ -26,6 +28,8 @@ const Website = ({ Component, pageProps, router }) => {
 
   return (
     <ChakraProvider theme={theme}>
+      
+    <ParticlesComponent />
       <Fonts />
       <motion.div
         className="cursor"

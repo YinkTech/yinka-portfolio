@@ -1,7 +1,6 @@
 import Head from "next/head";
 import NavBar from "./../navbar.js";
 import { Box, Container } from "@chakra-ui/react";
-// import YinkTech from "../yink-tech.js";
 
 const Layout = ({ children, router }) => {
   return (

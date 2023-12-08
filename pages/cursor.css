@@ -2,6 +2,13 @@
   cursor: cell;
 }
 
+.particles-js {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 .cursor {
   position: fixed;
   left: 0;
@@ -132,8 +139,9 @@
 }
 
 .NewHomeImage {
-  transition: 0.4s all ease-in-out ;
- }
+  transition: 0.4s all ease-in-out;
+}
+
 .NewHomeImage:hover {
-  transform: scale(.9);
+  transform: scale(0.9);
 }

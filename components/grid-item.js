@@ -95,7 +95,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 );
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
+  <Box w="100%" border="3px" textAlign="center">
     <LinkBox
       as={NextLink}
       scroll={false}
