@@ -54,7 +54,6 @@ const Works = () => {
                   }}
                 >
                   <WorkGridItem
-                    id={data.id}
                     title={data.title}
                     thumbnail={data.thumbnail}
                   />
