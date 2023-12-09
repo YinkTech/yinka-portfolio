@@ -51,67 +51,38 @@ export const homeData = [
 
 export const WorkData = [
   {
-    id: "movie-box ",
-    title: "Movie Box",
-    thumbnail: moviebox,
-    description: `A web application designed for movie enthusiasts, enabling users to explore, search for movies, view detailed
-    information about them, sort movies based on preferences, and preview movie trailers. This application is built
-    using React, styled with Tailwind and Chakra UI, and utilizes the TMDB API for movie data.
-    `,
-  },
-  {
-    id: "image-gallery ",
-    title: "Image Gallery",
-    thumbnail: funImage,
-    description: `A web application built with React.js that leverages Firebase for user login and authentication. It features a fully
-    functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for
-    image sourcing.
-    `,
-  },
-  {
-    id: "yshop ",
-    title: "Y Shop",
-    thumbnail: yshop,
-    description: `An e-commerce web application built with React.js and a Dummy API. This application showcases products
-    along with their details and offers discounts on each product.
-    `,
-  },
-  {
-    id: "andriod ",
-    title: "Andriod Website Clone",
-    thumbnail: andriod,
-    description: `A replicated version of an Android website, demonstrating proficiency in React.js and Tailwind. This project
-    showcases an understanding of props and state management across different components.
-    .
-    `,
-  },
-  {
-    id: "stock-market",
-    title: "stock-market",
-    thumbnail: stockMarket,
-    description:
-      "This is a React-Redux app that displays all the cryptocurrency coins and display their details on a new page with....",
-  },
-  {
-    id: "home-heart",
-    title: "home-heart",
-    thumbnail: thumbHeart,
-    description:
-      "This is a React-Redux app that allows users to sign up and sign in, allow only sign up users to add items....",
-  },
-  {
-    id: "web3-project",
-    title: "web3-project",
-    thumbnail: thumbWeb3,
-    description: "web3-decentralize React page....",
-  },
-  {
-    id: "Coins-Marketplace",
-    title: "Coins-Marketplace",
-    thumbnail: thumbCoins,
-    description:
-      "This project is a captone project in javascript, where data is been fetched from api....",
-  },
+  title: "Movie Box",
+  thumbnail: Homemoviebox,
+  thumbnails: '/images/works/moviebox.png',
+  hrefLink: "https://movie-box-azure.vercel.app/",
+  description: `A web application designed for movie enthusiasts, enabling users to explore, search for movies, view detailed
+                information about them, sort movies based on preferences, and preview movie trailers.
+                `,
+  stackList: "React, Tailwind, Chakra UI,TMDB API",
+  githubLink: "https://github.com/YinkTech/MovieBox",
+},
+{
+  title: "Image Gallery ",
+  thumbnail: HomefunImage,
+  thumbnails: funImage,
+  hrefLink: "https://fun-image-gallery.vercel.app/",
+  description: `A  web application built with React.js that leverages Firebase for user login and authentication. It features a fully
+                functional drag-and-drop image gallery, designed with Tailwind, and utilizes the Art Institute of Chicago API for image sourcing.
+  `,
+  stackList: "React, Tailwind, FireBase, Art Institute of Chicago API",
+  githubLink: "https://github.com/YinkTech/Image-Gallery",
+},
+{
+  title: "Andriod Website Clone",
+  thumbnail: HomeAndriod,
+  thumbnails: andriod,
+  hrefLink: "https://andriodredesign.vercel.app/",
+  description: `A replicated version of an Android website, demonstrating proficiency in React.js and Tailwind. This project
+  showcases an understanding of props and state management across different components.
+  `,
+  stackList: "React, Tailwind",
+  githubLink: "https://github.com/YinkTech/andriod-redesign",
+},
 ];
 
 export const PostData = [
