@@ -39,38 +39,38 @@ export const NewHomeGridItem = ({
         />
       </LinkBox>
       <Box>
-      <Text mt={2} fontWeight="bold" fontSize={20}>
-        {title}
-      </Text>
-      <Text fontSize={14}>{description}</Text>
-      <Text fontSize={14}>
-        {" "}
-        <span style={{ fontWeight: "bold" }}> Stack/Tools: </span> {stackList}
-      </Text>
-      <Box>
-        <span>
-          <Link href={githubLink} target="_blank">
-            <Button
-            maxW={0}
-              variant="ghost"
-              colorScheme="red.500"
-              fontSize={23}
-              leftIcon={<Icon as={IoLogoGithub} />}
-            ></Button>
-          </Link>
-        </span>
+        <Text mt={2} fontWeight="bold" fontSize={20}>
+          {title}
+        </Text>
+        <Text fontSize={14}>{description}</Text>
+        <Text fontSize={14}>
+          {" "}
+          <span style={{ fontWeight: "bold" }}> Stack/Tools: </span> {stackList}
+        </Text>
+        <Box>
+          <span>
+            <Link href={githubLink} target="_blank">
+              <Button
+                maxW={0}
+                variant="ghost"
+                colorScheme="red.500"
+                fontSize={23}
+                leftIcon={<Icon as={IoLogoGithub} />}
+              ></Button>
+            </Link>
+          </span>
 
-        <span>
-          <Link href={href} target="_blank">
-            <Button
-              variant="ghost"
-              colorScheme="blue.200"
-              fontSize={23}
-              leftIcon={<Icon as={IoLinkSharp} />}
-            ></Button>
-          </Link>
-        </span>
-      </Box>
+          <span>
+            <Link href={href} target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="blue.200"
+                fontSize={23}
+                leftIcon={<Icon as={IoLinkSharp} />}
+              ></Button>
+            </Link>
+          </span>
+        </Box>
       </Box>
     </SimpleGrid>
   </Box>
@@ -94,20 +94,17 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 );
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+export const WorkGridItem = ({ id, title, thumbnail }) => (
   <Box w="100%" border="3px" textAlign="center">
-    
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        placeholder="blur"
-      />
-      <LinkOverlay as="div" href={`/works/${id}`}>
-        <Text mt={2} fontSize={20} fontWeight="bold">
-          {title}
-        </Text>
-      </LinkOverlay>
+    <Image
+      src={thumbnail}
+      alt={title}
+      className="grid-item-thumbnail"
+      placeholder="blur"
+    />
+    <Text mt={2} fontSize={20} fontWeight="bold">
+      {title}
+    </Text>
   </Box>
 );
 

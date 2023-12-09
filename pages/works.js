@@ -1,6 +1,5 @@
 import {
   Modal,
-  ModalOverlay,
   ModalContent,
   ModalHeader,
   Heading,
@@ -23,19 +22,20 @@ import Section from "../components/section";
 import { WorkGridItem } from "./../components/grid-item";
 import Layout from "../components/layouts/article";
 import { WorkData } from "../components/Data";
-import { shortenText } from "../components/layouts/shorthand";
 import React, { useState } from "react";
 import { IoLinkSharp, IoLogoGithub } from "react-icons/io5";
+import { OverlayOne } from "../components/overlayone";
 
 const Works = () => {
-  const OverlayOne = () => (
-    <ModalOverlay
-      bg="blackAlpha.300"
-      backdropFilter="blur(5px) hue-rotate(90deg)"
-    />
-  );
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [overlay, setOverlay] = useState(<OverlayOne />);
+  const [overlay, setOverlay] = useState(null);
+  const [selectedWork, setSelectedWork] = useState(null);
+
+  const openModal = (data) => {
+    setSelectedWork(data);
+    onOpen();
+  };
+
   return (
     <Layout>
       <Container>
@@ -49,23 +49,23 @@ const Works = () => {
                 <div
                   onClick={() => {
                     setOverlay(<OverlayOne />);
-                    onOpen();
+                    // onOpen();
+                    openModal(data)
                   }}
                 >
                   <WorkGridItem
                     id={data.id}
                     title={data.title}
                     thumbnail={data.thumbnail}
-                  >
-                    {shortenText(data.description, 51)}
-                  </WorkGridItem>
+                  />
                 </div>
                 <Modal isCentered isOpen={isOpen} size="xl" onClose={onClose}>
                   {overlay}
                   <ModalContent className="ModalSet">
                     <ModalCloseButton />
-                    <ModalHeader> {" "} </ModalHeader>
+                    <ModalHeader> </ModalHeader>
                     <ModalBody>
+                    {selectedWork && (
                       <SimpleGrid
                         columns={[1, 1, 2]}
                         alignItems="center"
@@ -76,11 +76,11 @@ const Works = () => {
                             as={NextLink}
                             scroll={false}
                             cursor="pointer"
-                            href={data.hrefLink}
+                            href={selectedWork.hrefLink}
                           >
                             <Image
-                              src={data.thumbnails}
-                              alt={data.title}
+                              src={selectedWork.thumbnails}
+                              alt={selectedWork.title}
                               className="grid-item-thumbnail"
                               placeholder="blur"
                             />
@@ -88,20 +88,18 @@ const Works = () => {
                         </Box>
                         <Box>
                           <Text mt={2} fontWeight="bold" fontSize={20}>
-                            {data.title}
+                            {selectedWork.title}
                           </Text>
-                          <Text fontSize={14}>{data.description}</Text>
+                          <Text fontSize={14}>{selectedWork.description}</Text>
                           <Text fontSize={14}>
-                            {" "}
                             <span style={{ fontWeight: "bold" }}>
-                              {" "}
                               Stack/Tools:{" "}
-                            </span>{" "}
-                            {data.stackList}
+                            </span>
+                            {selectedWork.stackList}
                           </Text>
                           <Box>
                             <span>
-                              <Link href={data.githubLink} target="_blank">
+                              <Link href={selectedWork.githubLink} target="_blank">
                                 <Button
                                   maxW={0}
                                   variant="ghost"
@@ -113,7 +111,7 @@ const Works = () => {
                             </span>
 
                             <span>
-                              <Link href={data.hrefLink} target="_blank">
+                              <Link href={selectedWork.hrefLink} target="_blank">
                                 <Button
                                   variant="ghost"
                                   colorScheme="blue.200"
@@ -125,6 +123,7 @@ const Works = () => {
                           </Box>
                         </Box>
                       </SimpleGrid>
+                    )}
                     </ModalBody>
                     <ModalFooter>
                       <Button onClick={onClose}>Close</Button>
