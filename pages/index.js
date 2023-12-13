@@ -94,7 +94,7 @@ const Page = () => {
           this exciting journey!
         </BioYear>
 
-        <WorksShow> A Showcase of My Creations:</WorksShow>
+        <WorksShow> A Showcase of My Creations </WorksShow>
         <Box>
           <FrontWork />
         </Box>

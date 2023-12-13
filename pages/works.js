@@ -25,6 +25,7 @@ import { WorkData } from "../components/Data";
 import React, { useState } from "react";
 import { IoLinkSharp, IoLogoGithub } from "react-icons/io5";
 import { OverlayOne } from "../components/overlayone";
+import { Meta } from "../components/work";
 
 const Works = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -91,9 +92,11 @@ const Works = () => {
                           </Text>
                           <Text fontSize={14}>{selectedWork.description}</Text>
                           <Text fontSize={14}>
+                          <Meta>
                             <span style={{ fontWeight: "bold" }}>
                               Stack/Tools:{" "}
                             </span>
+                            </Meta>
                             {selectedWork.stackList}
                           </Text>
                           <Box>
