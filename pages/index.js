@@ -87,13 +87,13 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <BioYear>Currently working on:</BioYear>
+        <BioYear>
+          Currently, I am dedicated to refining my skills across diverse
+          JavaScript libraries while joyfully engaging in the creation and
+          animation of elements through GSAP and Framer Motion—come join me on
+          this exciting journey!
+        </BioYear>
 
-        <Paragraph>
-          "Continuously enhancing my expertise in various JavaScript libraries
-          and having a blast crafting and animating elements using GSAP and
-          Framer Motion. Join me on my journey!"
-        </Paragraph>
         <WorksShow> A Showcase of My Creations:</WorksShow>
         <Box>
           <FrontWork />
