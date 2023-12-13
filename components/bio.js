@@ -14,7 +14,7 @@ export const BioYear = styled.span`
 export const WorksShow = styled.span`
   font-weight: bold;
   display: block;
-  color: #1c2273;
+  color: #7689d8;
   margin-top: 20px;
   text-align: center;
   margin-bottom: 30px;

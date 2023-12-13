@@ -28,8 +28,7 @@ const Website = ({ Component, pageProps, router }) => {
 
   return (
     <ChakraProvider theme={theme}>
-      
-    <ParticlesComponent />
+      <ParticlesComponent />
       <Fonts />
       <motion.div
         className="cursor"
